@@ -1,0 +1,2 @@
+Copied code from Sprint 2. I will add capabilities to calculate averages and display them.
+Now the program can show a student’s average in a single course and their overall average across all courses. I also updated the display so it shows course grades with an average next to them. This makes it easier to see how each student is doing.

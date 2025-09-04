@@ -1,0 +1,8 @@
+
+# Sprint 1:
+# 1. Created function to append students to a list of students
+# 2. Created function to remove a student from the student list
+# 3. Created a function to add a student to a course dictionary.
+#       a.) If student is not in student list, print warning message
+#       b.) If student is in the student list, but the course is not in the course dictionary
+#       c.) If student is in the student list, and the course is in the course dictionary
