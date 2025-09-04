@@ -1,0 +1,1 @@
+added the ability to save and load data. The program now writes all students, courses, and grades to a JSON file and can reload them later. This means the information does not get lost when the program closes. I tested it by saving data, restarting the program, and loading it back successfully.
