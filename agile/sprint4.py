@@ -172,8 +172,8 @@ class GradeBook:
         overall_text = f"{overall:.2f}" if overall is not None else "N/A"
         print(f"Overall average: {overall_text}")
 
-        def save(self, filename="gradebook.json"):
-        """Save all students and courses to a JSON file."""
+    def save(self, filename="gradebook.json"):
+        ##Save all students and courses to a JSON file.
         data = {
             "students": {
                 name: {"grades": student.grades}
@@ -183,7 +183,7 @@ class GradeBook:
         }
         with open(filename, "w") as f:
             json.dump(data, f, indent=2)
-        print(f"✅ Data saved to {filename}")
+        print(f"Data saved to {filename}")
 
     def load(self, filename="gradebook.json"):
         """Load all students and courses from a JSON file."""
@@ -191,7 +191,7 @@ class GradeBook:
             with open(filename, "r") as f:
                 data = json.load(f)
         except FileNotFoundError:
-            print(f"⚠️  File {filename} not found.")
+            print(f"File {filename} not found.")
             return
 
         # restore catalog
@@ -312,6 +312,7 @@ def menu():
         else:
             print("Please choose an option (1-11).")
         
+
 
 if __name__ == "__main__":
     print("Sprint 4 – Save & Load with json .")
